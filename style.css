@@ -83,6 +83,7 @@ h2 {
   font-weight: 400;
   line-height: 0.95;
   margin: 0;
+  letter-spacing: 0.05em;
 }
 
 h1 {
@@ -100,7 +101,7 @@ h2 {
   line-height: 1.5;
 }
 
-/* .button {
+/*.button {
   display: inline-block;
   padding: 15px 28px;
   border: 2px solid var(--green);
