@@ -226,7 +226,7 @@ h2 {
   width: 140%;
   max-width: none;
   transform:translateY(2%) translateX(-5%);
-  margin-bottom: -100px;
+  margin-bottom: -125px;
   filter: drop-shadow(0 40px 60px rgba(0,0,0,.15));
 }
 
