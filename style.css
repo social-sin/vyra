@@ -270,4 +270,15 @@ footer {
   .flavor-grid {
     grid-template-columns: 1fr;
   }
+
+    .packaging {
+    grid-template-columns: 1fr;
+    padding: 80px 6vw;
+  }
+
+  .packaging img {
+    width: 110%;
+    justify-self: center;
+    transform: rotate(-1deg);
+  }
 }
