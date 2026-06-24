@@ -26,7 +26,7 @@
     <p class="intro">
       Real fruit, functional ingredients, and 160mg of caffeine in every can.
     </p>
-    <a href="#flavors" class="button">Meet the Lineup</a>
+    <a href="#flavors" class="arrow-link">Explore Flavors<span>→</span></a>
   </div>
 
   <div class="hero-image">
@@ -101,6 +101,20 @@
 <footer>
   <p>VYRA Sparkling Yerba Mate</p>
 </footer>
+
+  </script>
+  const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
+  });
+});
+
+document.querySelectorAll(".fade-up").forEach(el => {
+  observer.observe(el);
+});
+  </script>
 
 </body>
 </html>
