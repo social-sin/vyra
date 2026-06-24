@@ -34,9 +34,15 @@ body {
 }
 
 .logo {
-  font-family: "Joly Display", serif;
-  font-size: 42px;
-  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 280px;
+  height: auto;
+  display: block;
 }
 
 .nav a {
@@ -213,6 +219,10 @@ footer {
     align-items: flex-start;
     gap: 20px;
     flex-direction: column;
+  }
+
+  .logo img {
+    width: 180px;
   }
 
   .nav a {
