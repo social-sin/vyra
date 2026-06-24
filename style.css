@@ -1,1 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
+@font-face {
+  font-family: "Joly Display";
+  src: url("fonts/JolyDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+:root {
+  --green: #143B2E;
+  --sage: #ABC99A;
+  --cream: #F4EDE6;
+  --pink: #E7B1B7;
+  --gold: #F2C45A;
+  --lavender: #C9C2E3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--green);
+  font-family: "Inter", sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 6vw;
+}
+
+.logo {
+  font-family: "Joly Display", serif;
+  font-size: 42px;
+  letter-spacing: 0.04em;
+}
+
+.nav a {
+  margin-left: 28px;
+  color: var(--green);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero {
+  min-height: 85vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 48px;
+  padding: 40px 6vw 80px;
+  background: linear-gradient(to bottom, var(--cream), var(--sage));
+}
+
+.eyebrow {
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  font-family: "Joly Display", serif;
+  font-weight: 400;
+  line-height: 0.95;
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(64px, 10vw, 140px);
+}
+
+h2 {
+  font-size: clamp(48px, 7vw, 96px);
+}
+
+.intro {
+  max-width: 520px;
+  margin: 28px 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 28px;
+  border: 2px solid var(--green);
+  color: var(--green);
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero-image img {
+  width: 100%;
+  max-height: 700px;
+  object-fit: contain;
+}
+
+.values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  padding: 60px 6vw;
+  background: var(--green);
+  color: var(--cream);
+}
+
+.values span {
+  display: block;
+  font-size: 48px;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.values h3 {
+  font-size: 18px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.flavors {
+  padding: 90px 6vw;
+}
+
+.flavors h2 {
+  margin-bottom: 48px;
+}
+
+.flavor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.flavor-card {
+  padding: 48px 28px;
+  text-align: center;
+}
+
+.flavor-card img {
+  width: 80%;
+  max-height: 430px;
+  object-fit: contain;
+}
+
+.flavor-card h3 {
+  font-size: 24px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.flavor-card p {
+  font-weight: 700;
+}
+
+.lime {
+  background: var(--sage);
+}
+
+.guava {
+  background: var(--pink);
+}
+
+.lavender {
+  background: var(--lavender);
+}
+
+.statement {
+  padding: 110px 6vw;
+  background: var(--green);
+  color: var(--cream);
+}
+
+.statement p {
+  max-width: 620px;
+  margin-top: 30px;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.cta {
+  padding: 100px 6vw;
+  text-align: center;
+  background: var(--cream);
+}
+
+.cta .button {
+  margin-top: 32px;
+}
+
+footer {
+  padding: 28px 6vw;
+  background: var(--green);
+  color: var(--cream);
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 850px) {
+  .nav {
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .nav a {
+    margin: 0 18px 0 0;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .values,
+  .flavor-grid {
+    grid-template-columns: 1fr;
+  }
+}
