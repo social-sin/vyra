@@ -378,55 +378,6 @@ min-height: 720px;
   filter: drop-shadow(0 40px 60px rgba(0,0,0,.15));
 }
 
-.lifestyle {
-  padding: 110px 6vw;
-  background: var(--cream);
-  color: var(--green);
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-}
-
-.lifestyle .eyebrow {
-  margin-bottom: 28px;
-}
-
-.lifestyle h2 {
-  max-width: 1000px;
-  margin: 0 auto 28px;
-
-  font-size: clamp(56px, 6vw, 110px);
-  line-height: 0.95;
-  text-align: center;
-}
-
-.lifestyle p:not(.eyebrow) {
-  max-width: 620px;
-  margin: 0 auto;
-
-  font-size: 21px;
-  line-height: 1.5;
-}
-
-.lifestyle-tags {
-  display: flex;
-  justify-content: center;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-}
-
-.lifestyle-tags span {
-  padding: 0.7rem 1.2rem;
-  border: 1px solid rgba(20, 59, 46, 0.18);
-  border-radius: 999px;
-
-  font-size: 0.85rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
 .statement {
   padding: 110px 6vw;
   background: var(--green);
