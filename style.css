@@ -318,6 +318,18 @@ min-height: 720px;
   position: relative;
 }
 
+.packaging::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 75% 50%,
+      rgba(255,255,255,.35),
+      transparent 45%
+    );
+}
+
 .packaging-image {
   position: relative;
 }
@@ -327,6 +339,8 @@ min-height: 720px;
 }
 
 .packaging h2 {
+  font-size: clamp(56px, 5vw, 88px);
+  line-height: 0.95;
   margin-bottom: 28px;
 }
 
