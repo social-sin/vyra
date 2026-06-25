@@ -173,11 +173,11 @@ h2 {
 }
 
 .flavors {
-  padding: 90px 6vw;
+  padding: 100px 6vw;
 }
 
 .flavors h2 {
-  margin-bottom: 48px;
+  margin-bottom: 56px;
 }
 
 .flavor-grid {
@@ -187,24 +187,63 @@ h2 {
 }
 
 .flavor-card {
-  padding: 48px 28px;
+min-height: 720px;
+  padding: 48px 32px 42px;
   text-align: center;
+
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items: end;
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.flavor-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 45px rgba(20, 59, 46, 0.12);
 }
 
 .flavor-card img {
-  width: 80%;
-  max-height: 530px;
+  width: 90%;
+  max-height: 470px;
   object-fit: contain;
+  justify-self: center;
+  align-self: center;
+}
+
+.flavor-info {
+  padding-top: 36px;
 }
 
 .flavor-card h3 {
-  font-size: 24px;
+  margin: 0 0 18px;
+  font-size: clamp(22px, 1.6vw, 30px);
+  line-height: 1.15;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
-.flavor-card p {
+.flavor-benefit {
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 0.35em;
+
+  font-size: 18px;
   font-weight: 700;
+  line-height: 1.35;
+}
+
+.flavor-benefit span {
+  display: block;
+}
+
+.flavor-benefit span:last-child {
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.8;
 }
 
 .lime {
@@ -456,11 +495,44 @@ footer {
     text-align: left;
   }
 
-  .values,
-  .flavor-grid {
+  .values {
     grid-template-columns: 1fr;
   }
 
+  .flavors {
+    padding: 80px 6vw;
+  }
+
+  .flavors h2 {
+    margin-bottom: 36px;
+  }
+
+   .flavor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flavor-card {
+    min-height: auto;
+    padding: 48px 28px;
+  }
+
+  .flavor-card img {
+    width: 80%;
+    max-height: 480px;
+    margin-bottom: 36px;
+  }
+
+  .flavor-benefit {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .flavor-benefit span:last-child {
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  
     .packaging {
     grid-template-columns: 1fr;
     padding: 80px 6vw;
