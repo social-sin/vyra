@@ -195,7 +195,37 @@ min-height: 720px;
   grid-template-rows: 1fr auto;
   align-items: end;
 
+    position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
   transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.flavor-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: center 15%;
+
+  opacity: 0.28;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.lime::before {
+  background-image: url("./assets/1.png");
+}
+
+.guava::before {
+  background-image: url("./assets/2.png");
+}
+
+.lavender::before {
+  background-image: url("./assets/3.png");
 }
 
 .flavor-card:hover {
