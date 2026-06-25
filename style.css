@@ -384,11 +384,25 @@ min-height: 720px;
   color: var(--cream);
 }
 
-.statement p {
-  max-width: 620px;
-  margin-top: 30px;
+.statement .eyebrow {
+  color: var(--gold);
+  margin-bottom: 24px;
+}
+
+.statement h2 {
+  max-width: 900px;
+  margin-bottom: 36px;
+}
+
+.statement-copy {
+  max-width: 650px;
+  margin: 0 0 20px;
   font-size: 22px;
   line-height: 1.5;
+}
+
+.statement-copy:last-child {
+  margin-bottom: 0;
 }
 
 .cta {
