@@ -495,7 +495,8 @@ footer {
     text-align: left;
   }
 
-  .values {
+  .values,
+  .flavor-grid {
     grid-template-columns: 1fr;
   }
 
@@ -505,10 +506,6 @@ footer {
 
   .flavors h2 {
     margin-bottom: 36px;
-  }
-
-   .flavor-grid {
-    grid-template-columns: 1fr;
   }
 
   .flavor-card {
