@@ -644,4 +644,9 @@ footer {
     justify-self: center;
     transform: rotate(-1deg);
   }
+
+  .statement {
+    grid-template-columns: 1fr;
+    gap: 2rem
+  }
 }
