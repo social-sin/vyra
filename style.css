@@ -687,6 +687,7 @@ footer {
     width: 100%;
     transform: none;
     margin-bottom: -60px;
+    transform: translatex(10%) translateY(10%);
   }
 
   .statement {
@@ -774,6 +775,11 @@ footer {
 
   .packaging {
     padding: 72px 6vw;
+  }
+
+  .packaging img {
+    width: 115%;
+    transform: translateX(-1%) translateY(2%);
   }
 
   .packaging h2 {
@@ -888,7 +894,7 @@ footer {
 
   .packaging img {
     width: 115%;
-    transform: translateX(-8%);
+    transform: translateX(-8%) translateY(5%);
   }
 
   .packaging-tags {
